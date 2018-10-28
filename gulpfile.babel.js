@@ -17,7 +17,7 @@ const hugoBin = `./bin/hugo.${process.platform === "win32" ? "exe" : process.pla
 const defaultArgs = ["-d", "../dist", "-s", "site"];
 
 if (process.env.DEBUG) {
-  defaultArgs.unshift("--debug")
+  defaultArgs.unshift("--debug");
 }
 
 gulp.task("hugo", (cb) => buildSite(cb));
@@ -26,9 +26,11 @@ gulp.task("build", ["css", "js", "hugo"]);
 gulp.task("build-preview", ["css", "js", "hugo-preview"]);
 
 gulp.task("css", () => (
-  gulp.src("./src/css/*.css")
+  gulp.src("./site/themes/AllzinOne/static/css/*.css")
+  // gulp.src("./src/css/*.css")
     .pipe(postcss([
-      cssImport({from: "./src/css/main.css"}),
+      // cssImport({from: "./src/css/main.css"}),
+      cssImport({from: "./site/themes/AllinOne/static/css/main.css"}),
       cssnext(),
       cssnano(),
     ]))
