@@ -1,0 +1,3 @@
+[submodule "site/themes/AllinOne"]
+	path = site/themes/AllinOne
+	url = https://github.com/orianna-zzo/AllinOne.git

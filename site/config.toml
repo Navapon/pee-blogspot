@@ -1,8 +1,8 @@
-baseURL                   = "https://wizardly-thompson-9107a7.netlify.com/"
+baseURL                   = "/"
 builddrafts                = false
-languageCode               = "zn-Hans"
+languageCode               = "en"
 canonifyurls               = true
-contentdir                 = "content"
+contentdir                 = "./themes/AllinOne/exampleSite/content"
 layoutdir                  = "layouts"
 publishdir                 = "public"
 enableEmoji                = true
